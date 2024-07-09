@@ -44,7 +44,7 @@ export class Authservice{
         try {
              return await this.account.createEmailSession(email,password);
         } catch (error) {
-            console.log("error occured in login" ,error)
+            console.error("error occured in login" ,error)
         }
      }
 

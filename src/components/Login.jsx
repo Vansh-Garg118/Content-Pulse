@@ -67,6 +67,7 @@ function Login() {
                                 matchPattern :(val)=>/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(val)||
                                 "Enter valid emial",
                             }
+
                         })}
                             />
 
@@ -82,6 +83,7 @@ function Login() {
                             type="submit"
                             children="signin"
                             />
+                            <div>{error}</div>
                         </div>
                     </form>
                 </div>
